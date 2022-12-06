@@ -520,8 +520,8 @@ export default function createTippy(
     const popperTreeData = getNestedPopperTree()
       .concat(popper)
       .map((popper) => {
-        const instance = popper._tippy!;
-        const state = instance.popperInstance?.state;
+        const instance = popper._tippy;
+        const state = instance?.popperInstance?.state;
 
         if (state) {
           return {
